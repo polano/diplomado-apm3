@@ -15,7 +15,7 @@
 	border-right:solid 1px #07526e;
 	background-image: linear-gradient(bottom, rgb(10,94,125) 0%, rgb(14,139,184) 100%);
 	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	border-bottom-left-radius: 7px;
 	box-shadow:inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999 ;
 }
 
