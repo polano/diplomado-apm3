@@ -52,10 +52,11 @@ console.log(other_array);
 
 console.log(my_array);
 
-tasks = ['comer', 'dormir', 'jugar'];
+var tasks = [];
+tasks = ["Banana", "Orange", "Apple", "Mango"];
 
 console.log(tasks);
 
-tasks.splice(1,3, "Estudiar", "saltar", "correr");
+tasks.splice(2, 0, "Lemon", "Kiwi"); 
 
 console.log(tasks);
