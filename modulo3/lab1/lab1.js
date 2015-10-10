@@ -53,7 +53,7 @@ console.log(other_array);
 console.log(my_array);
 
 var tasks = [];
-tasks = ["Banana", "Orange", "Apple", "Mango"];
+tasks = ["Banana", "Orange", "Apple", "mango"];
 
 console.log(tasks);
 
