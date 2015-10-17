@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="tech">
+<head>
+	<title>AngularJS First Application</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="../assets/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="tech_controller">
+		<h1>Lenguajes</h1>
+		<ul>
+			<li ng-repeat="lenguales in simple_tech">{{ lenguales }}</li>
+		</ul>
+
+		<h1>valores</h1>
+		<ul>
+			<li ng-repeat="lenguaje in lenguales">{{ lenguaje.firstlenguales }} {{ lenguaje.lastlenguales }}</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+	angular.module('tech', [])
+	       .controller('tech_controller', ['$scope', function($scope){
+	       	$scope.simple_tech = ["Cobol", "c++", "asp", "php", "rpg", "net"];
+            $scope.lenguales = [
+                {
+                    firstlenguales: "1",
+                    lastlenguales: "2"
+                },
+                {
+                    firstlenguales: "3",
+                    lastlenguales: "4"
+                },
+                {
+                    firstlenguales: "5",
+                    lastlenguales: "6"
+                },
+                {
+                    firstlenguales: "7",
+                    lastlenguales: "8"
+                },
+                {
+                    firstlenguales: "9",
+                    lastlenguales: "10"
+                },
+                {
+                    firstlenguales: "11",
+                    lastlenguales: "12"
+                }
+            ];
+	       }])
+		
+	</script>
+</body>
+</html>
