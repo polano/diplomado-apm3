@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html ng-app="initial_spi">
 <head>
-	<title>Lab18</title>
+	<title>Lab1</title>
 	<meta charset="utf-8" />
 	<script type="text/javascript" src="../assets/angular.min.js"></script>
 	<script type="text/javascript" src="../assets/angular-route.min.js"></script>
 </head>
 <body>
-   <h1>products</h1>
+   <h1>Productos2</h1>
 
     <div ng-include src=" 'includes/header.html' "></div>
     <div ng-include src=" 'includes/menu.html' "></div>
@@ -18,24 +18,22 @@
         angular.module('initial_spi', ['ngRoute'])
                .config(['$routeProvider', function($routeProvider){
 
-            /*
-             * `when()` cuantas veces sea necesario
-             * `otherwise()` una sola vez "OJO"
-            */
-            $routeProvider
+                      $routeProvider
 
-              .when('/products/', {
-                templateUrl : "products.html"
+            .when('/home', {
+                templateUrl : "otherwise.html"
             })
-            
-            .when('/contact/', 
+			
+			.when('/email', {
+                templateUrl : "email.html"
+            })           
+            .when('/contact', 
                 {
                     templateUrl: "contact.html"
-                })
-            
-            .otherwise({
+                })          		
+			 .products({
                 redirectTo: '/',
-                templateUrl: 'otherwise.html'
+                templateUrl: 'products.html'
             });
 
                }])

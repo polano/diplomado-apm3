@@ -15,7 +15,12 @@ angular.module('initial_spi', ['ngRoute', 'initial_spi.controllers'])
 	    templateUrl : "views/mobile.html",
 	    controller: 'mobileController'
 	})
-
+	
+	.when('/mobile', {
+	    templateUrl : "views/contact.html",
+	    controller: 'contactController'
+	})
+	
 	.when('/smartphone', {
 		templateUrl: "views/smartphone.html",
 		controller: 'smartphoneController'
